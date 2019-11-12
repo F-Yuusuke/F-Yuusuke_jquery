@@ -89,6 +89,7 @@ $(".js-hamburger").on("click", function() {
   });
 
   //モーダル
+  // 使えるようになりたい
   $(".js-modal").on("click", function() {
     $("body").addClass("modal-open");
     $(".modal-content").fadeIn("slow");
@@ -104,17 +105,21 @@ $(".js-hamburger").on("click", function() {
   // タブメニュー
   $(".tab-nav a").on("click", function() {
     if ($(this).hasClass("active")) {
+      // hasは持っていたらという意味
       return false;
     }
 
     console.log(this.hash);
 
     $(".tab-nav a").removeClass("active");
+    // removelassはactiveクラスを外すということ
     $(this).addClass("active");
 
     $(".tab-content > div").removeClass("active");
+    // removeClass初期化している
     $(".tab-content > div")
       .filter(this.hash)
+      // filterは検索
       .addClass("active");
 
     return false;
