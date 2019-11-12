@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQueryメニュー練習</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="container">
+  <div class="q-box">
+    <h2>要素のサイズ、色を変えちゃうね！</h2>
+    <p class="description">クリックするだけでボタンのサイズ色を変えたり、<br>非表示にできるで！</p>
+    <div class="btn-wrapper">
+      <div id="js-click-btn" class="btn">ボタン</div>
+    </div>
+  </div>
+
+  <div class="q-box">
+    <h2>ホバーで要素の透明度を変更するよ！</h2>
+    <p class="description">文字や画像にカーソルが重なったときに、変化を出すことで<br>
+     ユーザーにクリックできるということが伝わりやすくなるよ！</p>
+    <div class="btn-wrapper">
+      <div id="js-hover-btn" class="btn">ボタン</div>
+    </div>
+  </div>
+
+  <div class="q-box">
+    <h2>クリックで要素の表示、非表示を切り替える</h2>
+    <p class="description">ECサイトなどで、商品の詳細をユーザーがクリック時に表示する時などに使う</p>
+    <div class="btn-wrapper">
+      <div id="js-show-btn" class="btn">表示させる</div>
+      <div id="js-hide-btn" class="btn">非表示にするよ</div>
+      <div class="box-wrapper">
+        <div id="js-target-element" class="box">商品の詳細です</div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="q-box">
+    <h2>要素の追加</h2>
+    <p class="description">よくわかりません</p>
+    <div class="btn-wrapper">
+      <ul>
+        <li id="js-add-btn" class="btn">追加</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="q-box">
+    <h2>toggle 黒いボタンをクリック</h2>
+    <p class="description">最初に小項目を隠して表示したい</p>
+    <dl class="toggle-menu">
+      <dt class="js-toggle">中国地方代表</dt>
+      <dd>尾道商業高校</dd>
+      <dd>倉敷商業高校</dd>
+      <dd>南陽工業高校</dd>
+      <dd>出雲西高校</dd>
+      <dd>鳥取城北高校</dd>
+    </dl>
+   </dl>
+  </div>
+
+
+
+  <div class="q-box">
+    <h2>ハンバーガーメニュー</h2>
+    <p class="description">
+      スマホサイトのヘッダーなどでよく使われます。
+      アニメーションはcss。
+    </p>
+    <div id="toggle" class="js-hamburger hamburger">
+      <span></span>
+    </div>
+  </div>
+
+  
+  <div class="q-box">
+    <div class="before_test">
+      
+    </div>
+  </div>
+
+
+
+<div class="q-box">
+  <h2>スライダー</h2>
+  <p class="description">
+    ECサイトで商品の画像を表示する時などに使う
+  </p>
+  <div class="d-flex">
+    <div class="slider">
+      <div class="slide-wrapper">
+        <div class="slide"><span class="slide-text">1</span></div>
+        <div class="slide"><span class="slide-text">2</span></div>
+        <div class="slide"><span class="slide-text">3</span></div>
+        <div class="slide"><span class="slide-text">4</span></div>
+        <div class="slide"><span class="slide-text">5(最後)</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="q-box">
+  <h2>タブメニュー増やす</h2>
+  <p class="description">
+    ジャンルごとに分けたい時に使う
+  </p>
+  <div class="d-flex">
+    <ul class="tab-nav">
+      <li><a href="#tab01" class="active">１号艇</a></li>
+      <li><a href="#tab02">2号艇</a></li>
+      <li><a href="#tab03">3号艇</a></li>
+      <li><a href="#tab04">4号艇</a></li>
+      <li><a href="#tab05">5号艇</a></li>
+      <li><a href="#tab06">6号艇</a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="active" id="tab01">90%</div>
+      <div id="tab02">65%</div>
+      <div id="tab03">45%</div>
+      <div id="tab04">30%</div>
+      <div id="tab05">15%</div>
+      <div id="tab06">5%</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- CDNをJavaScriptの上に書く -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
